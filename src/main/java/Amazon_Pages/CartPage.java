@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 public class CartPage extends BasePage{
     private final By buttonCheckout = new By.ByXPath("//input[@name='proceedToRetailCheckout']");
     public CartPage(WebDriver driver){this.driver = driver;}
-    public boolean сheckout(){
+    public boolean Checkout(){
         try {
             driver.findElement(buttonCheckout).click();
         }catch (Exception e){

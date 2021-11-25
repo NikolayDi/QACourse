@@ -46,7 +46,7 @@ public class Task_16 {
         int numberProduct = 0;
         ProductPage productPage = searchResultPage.getProduct(numberProduct);
         CartPage cartPage = productPage.buyProduct();
-        cartPage.сheckout();
+        cartPage.Checkout();
     }
     @AfterSuite
     public void quiteBrowser(){

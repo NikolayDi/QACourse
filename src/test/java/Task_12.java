@@ -47,7 +47,7 @@ public class Task_12 {
         ProductResultPage searchResultPage = homePage.search(query);
         ProductPage productPage = searchResultPage.getProduct(numberProduct);
         CartPage cartPage = productPage.buyProduct();
-        cartPage.сheckout();
+        cartPage.Checkout();
     }
     @AfterMethod
     public void quiteBrowser(){

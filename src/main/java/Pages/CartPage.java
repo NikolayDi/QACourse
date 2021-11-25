@@ -9,7 +9,7 @@ public class CartPage extends BasePage{
     public CartPage(WebDriver driver) {
         this.driver = driver;
     }
-    public void сheckout(){
+    public void Checkout(){
         WebElement Checkout = driver.findElement(By.cssSelector(buttonCheckoutCSS));
         Checkout.click();
     }

@@ -1,7 +1,5 @@
 package Task_13.steps;
 
-import Factory.DriverType;
-import Factory.WebDriverFactory;
 import Pages.CartPage;
 import Pages.HomePage;
 import Pages.ProductPage;
@@ -56,7 +54,7 @@ public class UserTestSteps {
     public void openingTheProductUnderNumberAndPlacingAnOrder(int numberProduct) {
         ProductPage productPage = searchResultPage.getProduct(numberProduct);
         CartPage cartPage = productPage.buyProduct();
-        cartPage.сheckout();
+        cartPage.Checkout();
         driver.quit();
     }
 }

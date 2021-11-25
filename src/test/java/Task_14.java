@@ -49,7 +49,7 @@ public class Task_14 {
         ProductResultPage searchResultPage = homePage.search(query);
         ProductPage productPage = searchResultPage.getProduct(numberProduct);
         CartPage cartPage = productPage.buyProduct();
-        Assert.assertTrue(cartPage.сheckout());
+        Assert.assertTrue(cartPage.Checkout());
     }
     @Test
     public void switchLanguage() {
