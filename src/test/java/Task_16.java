@@ -32,7 +32,7 @@ public class Task_16 {
         homePage = new HomePage(driver);
         searchResultPage = homePage.search(query);
     }
-    @Test(testName = "Test Basics 1")
+    @Test()
     public void searchResultsTitleTest(){
         List<String> resultTitles = searchResultPage.getResultsTitles();
 
@@ -41,7 +41,7 @@ public class Task_16 {
             Assert.assertTrue(title.toLowerCase().contains(query));
         }
     }
-    @Test(testName = "Test Basics 1")
+    @Test()
     public void purchaseProduct (){
         int numberProduct = 0;
         ProductPage productPage = searchResultPage.getProduct(numberProduct);

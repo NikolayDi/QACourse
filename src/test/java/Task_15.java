@@ -31,7 +31,7 @@ public class Task_15 {
         List<String> resultTitles = searchResultPage.getResultsTitles();
 
         for (String title : resultTitles) {
-            System.out.println(title);
+            //System.out.println(title);
             Assert.assertTrue(title.toLowerCase().contains(query));
         }
     }
