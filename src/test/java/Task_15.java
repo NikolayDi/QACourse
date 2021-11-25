@@ -36,7 +36,7 @@ public class Task_15 {
         }
     }
 
-    @AfterTest
+    @AfterSuite
     public void quiteBrowser(){
         driver.quit();
     }
