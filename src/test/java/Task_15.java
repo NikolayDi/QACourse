@@ -16,7 +16,7 @@ public class Task_15 {
         return new Object[][]{
                 {"selenium"},
                 {"mонитор"},
-                {"клавиатура"},
+                {"ноутбук"},
         };
     }
     @BeforeMethod
@@ -24,7 +24,7 @@ public class Task_15 {
         driver.manage().window().maximize();
         driver.get("https://rozetka.com.ua");
     }
-    @Test(dataProvider = "testTitle")
+    @Test(testName = "Test Basics 1", dataProvider = "testTitle")
     public void searchResultsTitleTest(String query) {
         HomePage homePage = new HomePage(driver);
         ProductResultPage searchResultPage = homePage.search(query);

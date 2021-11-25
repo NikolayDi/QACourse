@@ -4,6 +4,7 @@ import Factory.WebDriverFactory;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -61,8 +62,8 @@ public class Task_14 {
         int index = languagePage.getLenguageIbdex();
         Assert.assertEquals(index, indexLanguage);
     }
-    @AfterMethod
+    @AfterSuite
     public void quiteBrowser(){
-        //driver.quit();
+        driver.quit();
     }
 }

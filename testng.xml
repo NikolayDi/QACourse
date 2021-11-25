@@ -3,7 +3,7 @@
 <suite name="Practice Suite">
   <test name="Test Basics 1">
       <classes>
-        <class name="Task_16"/>
+        <class name="Task_15"/>
       </classes>
   </test>
 </suite>

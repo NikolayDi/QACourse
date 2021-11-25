@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 
 public class CartPage extends BasePage{
     private  String buttonCheckoutCSS = "a.button_color_green";
+
     public CartPage(WebDriver driver) {
         this.driver = driver;
     }
