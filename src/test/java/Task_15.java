@@ -16,7 +16,7 @@ public class Task_15 {
         return new Object[][]{
                 {"selenium"},
                 {"mонитор"},
-                {"ноутбук"},
+                {"холодильник"},
         };
     }
     @BeforeMethod
